@@ -1,5 +1,7 @@
-public class student {
 
+
+// https://github.com/JohnTheArtist/COSC113_sept_3.git
+public class student {
 
 
     String FN;
@@ -14,26 +16,18 @@ public class student {
     }
 
     student(String FN, String LN){
-    this.FN = FN;
-    this.LN = LN;
+        this.FN = FN;
+        this.LN = LN;
 
     }
 
     // Constructor chaining
-//    student( String FN, String LN, int sid ){
-//
-//
-//        this.(FN,LN);
-//        this.sid = 2020;
-//
-//
-//
-//    }
+    student( String FN, String LN, int sid ){
+        this(FN,LN);
+        this.sid = 2020;
+    }
 
-
-    student( String FN, String LN, int sid){
-
-
+    student( String FN, int sid, String LN){
         this.FN = "K";
         this.LN = "C";
         this.sid = 2020;
@@ -117,6 +111,14 @@ public class student {
         System.out.println(s5.LN);
         System.out.println(s5.sid);
         System.out.println("-----------------------------------------------------------");
+
+        student s6 = new student();
+        s6.FN = "Melanie";
+        s6.setLN("Thomas");
+
+
+
+
     }
 
 
