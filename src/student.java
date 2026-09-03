@@ -27,12 +27,13 @@ public class student {
 
     public static void main(String[] args){
 
-
+        student s1;
+        student s2;
         s1 = new student("K", "C" , 2020);
         s2 = new student();
 
-        System.out.println(s1);
-        System.out.println(s2);
+        System.out.println(s1.FN);
+        System.out.println(s2.FN);
 
 
 
