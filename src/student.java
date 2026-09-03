@@ -28,14 +28,24 @@ public class student {
     public static void main(String[] args){
 
         student s1;
-        student s2;
         s1 = new student("K", "C" , 2020);
-        s2 = new student();
-
         System.out.println(s1.FN);
+        System.out.println(s1.LN);
+        System.out.println(s1.sid);
+
+        student s2;
+        s2 = new student();
         System.out.println(s2.FN);
+        System.out.println(s2.LN);
+        System.out.println(s2.sid);
 
 
+        student s3;
+        String FN = "Brian";
+        String LN = "Ortega";
+        int sid = 012333;
+        s3 = new student(FN, LN, sid);
+        System.out.println(s3.FN);
 
     }
 
