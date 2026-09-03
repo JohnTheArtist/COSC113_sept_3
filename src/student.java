@@ -13,6 +13,24 @@ public class student {
 
     }
 
+    student(String FN, String LN){
+    this.FN = FN;
+    this.LN = LN;
+
+    }
+
+    // Constructor chaining
+//    student( String FN, String LN, int sid ){
+//
+//
+//        this.(FN,LN);
+//        this.sid = 2020;
+//
+//
+//
+//    }
+
+
     student( String FN, String LN, int sid){
 
 
@@ -24,6 +42,40 @@ public class student {
 
     }
 
+    student( int sid, String LN, String FN){
+
+
+        this.FN = FN;
+        this.LN = LN;
+        this.sid = sid;
+
+
+
+    }
+
+    public String getFN() {
+        return FN;
+    }
+
+    public void setFN(String FN) {
+        this.FN = FN;
+    }
+
+    public String getLN() {
+        return LN;
+    }
+
+    public void setLN(String LN) {
+        this.LN = LN;
+    }
+
+    public int getSid() {
+        return sid;
+    }
+
+    public void setSid(int sid) {
+        this.sid = sid;
+    }
 
     public static void main(String[] args){
 
@@ -32,12 +84,14 @@ public class student {
         System.out.println(s1.FN);
         System.out.println(s1.LN);
         System.out.println(s1.sid);
+        System.out.println("-----------------------------------------------------------");
 
         student s2;
         s2 = new student();
         System.out.println(s2.FN);
         System.out.println(s2.LN);
         System.out.println(s2.sid);
+        System.out.println("-----------------------------------------------------------");
 
 
         student s3;
@@ -46,7 +100,23 @@ public class student {
         int sid = 012333;
         s3 = new student(FN, LN, sid);
         System.out.println(s3.FN);
+        System.out.println(s3.LN);
+        System.out.println(s3.sid);
+        System.out.println("-----------------------------------------------------------");
 
+        //you can create overloaded constructors by varying 1). the parameter number. 2). Order
+        student s4 = new student("Jack", "Carver");
+        System.out.println(s4.FN);
+        System.out.println(s4.LN);
+        System.out.println(s4.sid);
+        System.out.println("-----------------------------------------------------------");
+
+
+        student s5 = new student( 2003, "Fish", "Joker");
+        System.out.println(s5.FN);
+        System.out.println(s5.LN);
+        System.out.println(s5.sid);
+        System.out.println("-----------------------------------------------------------");
     }
 
 
