@@ -115,8 +115,11 @@ public class student {
         student s6 = new student();
         s6.FN = "Melanie";
         s6.setLN("Thomas");
-
-
+        s6.setFN("Nelly");
+        System.out.println(s6.FN);
+        System.out.println(s6.LN);
+        System.out.println(s6.sid);
+        System.out.println("-----------------------------------------------------------");
 
 
     }
